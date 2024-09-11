@@ -1,0 +1,11 @@
+"""
+2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
+"""
+
+def verificar_letra_a(string):
+    a = string.lower().count('a') 
+    if a > 0: return a
+    else: return 0
+
+texto = input("Informe uma string: ")
+print(verificar_letra_a(texto))
